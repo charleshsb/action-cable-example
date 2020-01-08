@@ -11,3 +11,7 @@ function submitNewMessage(){
      }
   });
 }
+
+this.App = {};
+
+App.cable = ActionCable.createConsumer();

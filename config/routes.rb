@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'users/:id', to: "users#show", as: "profile"
 
+  mount ActionCable.server => '/cable'
+
   resources :chatrooms, param: :slug
   resources :messages
 
